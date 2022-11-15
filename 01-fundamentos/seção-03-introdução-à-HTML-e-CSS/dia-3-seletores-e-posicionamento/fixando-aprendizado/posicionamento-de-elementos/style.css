@@ -2,13 +2,11 @@
     width: 200px;
     top: 50px;
     position: absolute;
-    z-index: 2;
   }
   
   .goomba {
     width: 100px;
     position: absolute;
-    z-index: 1;
     top: 350px;
     left: 65px;
   }
@@ -18,11 +16,15 @@
     position: absolute;
     top: 30px;
     left: 310px;
+    z-index: 1;
   }
   
   .speach {
-    font-size: 25px;
-
+    font-size: 17px;
+    position: absolute;
+    top: 57px;
+    left: 325px;
+    z-index: 2;
   }
   
   .bowser {
@@ -30,8 +32,4 @@
     position: absolute;
     left: 500px;
     top: 110px
-  }
-
-  p {
-
   }
