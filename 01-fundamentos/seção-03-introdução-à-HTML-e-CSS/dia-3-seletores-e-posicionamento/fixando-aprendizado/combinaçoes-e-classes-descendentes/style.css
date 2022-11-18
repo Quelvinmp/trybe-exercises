@@ -26,3 +26,12 @@ li {
 li em {
     font-weight: bold;
 }
+
+#languages li:not(:nth-child(n + 4)) {
+    color: blue;
+}
+
+.color-bg {
+    background-color: pink;
+}
+
