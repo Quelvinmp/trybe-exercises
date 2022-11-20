@@ -8,10 +8,10 @@ h1 {
     height: 50px;
     text-align: center;
     width: 200px;  
-    margin: 0 auto
+    margin: 0 auto;
   }
 
-  div {
+  section ul div {
     text-align: center;
   }
 
