@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#edede9;
+}
+
+#container-main {
+    display: flex;
+}
+
+/* Internal Navigation */
+#page-navigation {
+    top: 0px;
+    display: flex;
+    position:fixed; 
+    width: 100%;
+    background-color: #023047;
+    left: 0;
+    height: 64px;
+    justify-content: space-between;    
+}
+
+#page-navigation div {
+    display: flex;
+    margin-left: 100px;
+}
+
+#page-navigation div h1{
+    display: flex;
+    color: white;
+    margin: auto 0;
+}
+
+#page-navigation div h1:hover{
+    color: #a8dadc;
+}
+
+#page-navigation ul {
+    display: flex;
+    list-style: none;
+    height: 100%;
+    margin: 0 50px 0 0; 
+    justify-content: right;
+    gap: 50px;
+    align-items: center;
+}
+
+#page-navigation ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+#page-navigation ul li a:hover{
+    color: #a8dadc;
+}
+
+
+/* Main Content */
+main {
+    margin: 80px auto 0 auto;
+    width: 50%;
+}
+
+header h1 {
+    text-align: center;
+    margin: 16px 0;
+}
+
+h1, h2 {
+    font-family: 'Fredoka One', cursive;
+}
+
+p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Section 1 - Table */
+
+#section1 p {
+    text-align: justify;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+table caption {
+    font-weight: bolder;
+}
+
+table, th, td{
+    border: 3px outset #023047;
+}
+
+/* Section 2 */
+
+#section2 {
+    margin-top: 64px;
+}
+
+#section2 div {
+    display: flex;
+}
+
+#section2 p {
+    text-align: justify;
+}
+
+#section2 img {
+    width: 400px;
+    margin: 0 50px;
+}
+
+
+
+/* Section 3 */
+
+#section3 {
+    margin-top: 64px;
+}
+
+#section3 #cont-father {
+    display: flex;
+}
+
+#section3 #cont-child p{
+    text-align: justify;
+}
+
+#section3 img {
+    width: 400px;
+    margin: 0 50px;
+}
+
+/* Bibliografia */
+
+#bibliography{
+    margin: 64px 0;
+}
+
+#bibliography nav p {
+    text-align: center;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+#bibliography nav ul li{
+    list-style-type: none;
+    text-align: center;
+}
+
+/* Aside */
+
+#container-aside {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    width: 20%;
+}
+
+aside {
+    position: fixed;
+    padding: 48px;
+    
+}
+
+aside p {
+    text-align: justify;
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    background-color: #023047;
+    height: 30px;
+    bottom: 0;
+}
+
+footer p{
+    display: inline;
+    font-style: italic;
+    color: white;
+    margin: auto;
+}
