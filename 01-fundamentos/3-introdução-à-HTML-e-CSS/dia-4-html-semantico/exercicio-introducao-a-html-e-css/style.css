@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 * {
     padding: 0;
     margin-top: 0;
@@ -9,7 +11,7 @@ body {
     background-color:#edede9;
 }
 
-/* Navegação Interna */
+/* Internal Navigation */
 #page-navigation {
     display: flex;
     position:fixed; 
@@ -56,14 +58,43 @@ body {
 }
 
 
-/* Conteúdo Principal */
+/* Main Content */
 main {
     margin: 64px auto;
     width: 60%;
 }
 
-/* Cabeçalho e Navegação*/
 header h1 {
     text-align: center;
+    margin-top: 10px;
 }
+
+h1, h2 {
+    font-family: 'Fredoka One', cursive;
+}
+
+p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Section 1 - Table */
+
+#section1 p {
+    text-align: justify;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+table caption {
+    font-weight: bolder;
+}
+
+table, th, td{
+    border: 3px outset #023047;
+}
+
+/* Section 2 */
 
