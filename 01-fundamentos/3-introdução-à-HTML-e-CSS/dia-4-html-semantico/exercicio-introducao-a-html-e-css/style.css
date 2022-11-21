@@ -7,16 +7,16 @@
 }
 
 body {
-    display: grid;
     background-color:#edede9;
 }
 
-/* #container-main {
+#container-main {
     display: flex;
-} */
+}
 
 /* Internal Navigation */
 #page-navigation {
+    top: 0px;
     display: flex;
     position:fixed; 
     width: 100%;
@@ -64,8 +64,8 @@ body {
 
 /* Main Content */
 main {
-    margin: 80px auto;
-    width: 60%;
+    margin: 80px auto 0 auto;
+    width: 50%;
 }
 
 header h1 {
@@ -158,4 +158,21 @@ table, th, td{
 }
 
 /* Aside */
+
+#container-aside {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    width: 20%;
+}
+
+aside {
+    position: fixed;
+    padding: 48px;
+    
+}
+
+aside p {
+    text-align: justify;
+}
 
