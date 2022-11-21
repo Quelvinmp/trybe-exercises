@@ -66,7 +66,7 @@ main {
 
 header h1 {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 16px;
 }
 
 h1, h2 {
@@ -98,3 +98,20 @@ table, th, td{
 
 /* Section 2 */
 
+#section2 {
+    margin-top: 16px;
+    flex-direction: row;
+}
+
+#section2 p {
+    text-align: justify;
+}
+
+#section2 img {
+    width: 300px;
+    margin: 0 100px 0 50px;
+}
+
+#section2 div {
+    display: flex;
+}
