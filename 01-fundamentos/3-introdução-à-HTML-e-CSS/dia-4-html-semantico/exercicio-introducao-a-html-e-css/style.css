@@ -99,8 +99,11 @@ table, th, td{
 /* Section 2 */
 
 #section2 {
-    margin-top: 16px;
-    flex-direction: row;
+    margin-top: 64px;
+}
+
+#section2 div {
+    display: flex;
 }
 
 #section2 p {
@@ -108,10 +111,28 @@ table, th, td{
 }
 
 #section2 img {
-    width: 300px;
-    margin: 0 100px 0 50px;
+    width: 400px;
+    margin: 0 50px;
 }
 
-#section2 div {
+
+
+/* Section 3 */
+
+#section3 {
+    margin-top: 64px;
+}
+
+#section3 #cont-father {
     display: flex;
 }
+
+#section3 #cont-child p{
+    text-align: justify;
+}
+
+#section3 img {
+    width: 400px;
+    margin: 0 50px;
+}
+
