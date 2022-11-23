@@ -151,3 +151,19 @@
 
     // Exercício 10
 
+// const productCost = 10;
+// const tax = 20/100 * productCost;
+// const totalCostValue = productCost + tax;
+
+// const sellPrice = 20;
+
+// let profit;
+
+// if (productCost >= 0 || sellPrice >= 0) {
+//     console.log(profit = (sellPrice * 1000) - (totalCostValue * 1000));
+// } else {
+//     console.log('error');
+// }
+
+    // Exercício 11
+
