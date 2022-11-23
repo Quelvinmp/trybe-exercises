@@ -60,4 +60,17 @@
 
     // Exercício 5
 
+// const a = 100;
+// const b = 50;
+// const c = 30;
+
+// if (a + b + c == 180) {
+//     console.log('True');
+// } else if (a <= 0 || b <= 0 || c <= 0) {
+//     console.log('Erro');
+// } else if (a + b + c != 180) {
+//     console.log('False');
+// }
+
+    // Exercício 6
 
