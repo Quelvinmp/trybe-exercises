@@ -127,3 +127,27 @@
 
     // Exercício 8
 
+// const num1 = 5;
+// const num2 = 3; 
+// const num3 = 10; 
+
+// if (num1 % 2 == 0 || num2 % 2 == 0 || num3 % 2 == 0) {
+//     console.log('true');
+// } else {
+//     console.log('false');
+// }
+
+    // Exercício 9
+
+// const num1 = 10;
+// const num2 = 1; 
+// const num3 = 0; 
+
+// if (num1 % 2 !== 0 || num2 % 2 !== 0 || num3 % 2 !== 0) {
+//     console.log('true');
+// } else {
+//     console.log('false');
+// }
+
+    // Exercício 10
+
