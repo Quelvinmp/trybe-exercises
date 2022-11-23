@@ -74,3 +74,36 @@
 
     // Exercício 6
 
+// let chess = 'KINGS';
+
+// switch (chess.toLowerCase()) {
+//     case 'pawns':
+//         console.log('Vertically forward one square, with the option to move two squares if they have not yet moved');
+//         break;
+
+//     case 'knights':
+//         console.log('In an ‘L’ shape’: two squares in a horizontal or vertical direction, then move one square horizontally or vertically. They are the only piece able to jump over other pieces.');
+//         break;
+
+//     case 'bishops':
+//         console.log('Diagonally any number of squares');
+//         break;
+
+//     case 'rooks':
+//         console.log('Horizontally or vertically any number of squares');
+//         break;
+
+//     case 'queens':
+//         console.log('Diagonally, horizontally, or vertically any number of squares');
+//         break;
+
+//     case 'kings':
+//         console.log('One square in any direction, so long as that square is not attacked by an enemy piece');
+//         break;
+
+//     default:
+//         console.log('error');
+// }
+
+    // Exercício 7
+
