@@ -80,5 +80,16 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // console.log(lower);
 
 
-    // Requisito 8
+    // Requisito 8 e 9
 
+// let numeros = [];
+
+// for (let index = 1; index < 26; index += 1) {
+//     numeros.push(index);
+// }
+
+// // console.log(numeros);
+
+// for (let index = 0; index < numeros.length; index += 1) {
+//     console.log(numeros[index] / 2);
+// }
