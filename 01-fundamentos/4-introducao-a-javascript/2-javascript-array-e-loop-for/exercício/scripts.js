@@ -2,9 +2,16 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 
     // Requisito 1
+
 // for (let index = 0; index < numbers.length; index += 1) {
 //     console.log(numbers[index]);    
 // }
+    // ou
+// for (let x of numbers) {
+//     console.log(x);
+// }
+
+
 
 
     // Requisito 2
@@ -32,12 +39,12 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // if (media > 20) {
 //     console.log('Valor maior que 20');
-// } else if (media < 20) {
-//     console.log('Valor menor que 20');
+// } else {
+//     console.log('Valor menor ou igual a 20');
 // }
 
 
-    // Requisito 5
+//     // Requisito 5
 
 // let higher = numbers[0];
 
@@ -61,7 +68,7 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // }
 
 // if (odd === 0) {
-//     console.log('nenhum valor ímpar encontrado');
+//     console.log('nenhum valnumbers[0]or ímpar encontrado');
 // } else {
 //     console.log(odd);
 // }
