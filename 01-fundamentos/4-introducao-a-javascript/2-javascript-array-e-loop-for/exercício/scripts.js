@@ -39,9 +39,9 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
     // Requisito 5
 
-// let higher = 0;
+// let higher = numbers[0];
 
-// for (let index = 0; index < numbers.length; index += 1) {
+// for (let index = 1; index < numbers.length; index += 1) {
 //     if (numbers[index] > higher) {
 //         higher = numbers[index]
 //     }
@@ -69,9 +69,9 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
     // Requisito 7
 
-// let lower = Infinity;
+// let lower = numbers[0];
 
-// for (let index = 0; index < numbers.length; index += 1) {
+// for (let index = 1; index < numbers.length; index += 1) {
 //     if (numbers[index] < lower ) {
 //         lower = numbers[index]
 //     }
