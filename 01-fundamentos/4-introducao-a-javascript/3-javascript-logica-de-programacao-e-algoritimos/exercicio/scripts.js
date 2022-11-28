@@ -21,3 +21,28 @@
 // console.log(inverseWord);
 
     // Requisito 3
+
+// let programmingLanguage = ['java', 'javascript', 'python', 'html', 'css'];
+
+
+// let biggestWord = programmingLanguage[0].length;
+
+// for (let i = 0; i < programmingLanguage.length ; i += 1) {
+//     if (programmingLanguage[i].length > biggestWord) {
+//         biggestWord = programmingLanguage[i];
+//     }
+// }
+// console.log(biggestWord);
+
+
+// let smallestWord = programmingLanguage[0].length;
+
+// for (let i = 0; i < programmingLanguage.length ; i += 1) {
+//     if (programmingLanguage[i].length < smallestWord) {
+//         smallestWord = programmingLanguage[i];
+//     }
+// }
+// console.log(smallestWord);
+
+    // Requisito 4
+
