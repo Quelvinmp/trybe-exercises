@@ -24,3 +24,19 @@
 // console.log(verifyPalindrome(word));         // Requisito 1
 
 
+// let testingNumbers = [2, 3, 6, 7, 10, 1];
+
+// function verifyHigher (numbers) {
+
+// let higher = 0;
+
+// for (let index in numbers) {
+//     if (numbers[index] > higher) {
+//         higher = index;
+//     }
+// }
+
+//     return higher
+// }
+
+// console.log(verifyHigher(testingNumbers));           // Requisito 2
