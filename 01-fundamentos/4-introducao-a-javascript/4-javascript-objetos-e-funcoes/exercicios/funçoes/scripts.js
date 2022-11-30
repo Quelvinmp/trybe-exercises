@@ -122,3 +122,24 @@
 // }
 
 // console.log(sum1toN(testingNumber));            // Requisito 6
+
+// let ending = 'be';
+// let word = 'trybe';
+// let reversedEnding = ending.split('').reverse().join(''); // 'eb'
+// let reversedWord = word.split('').reverse().join(''); // 'ebyrt'
+
+// function verifyEndingWord(word, ending) {
+
+//     let equal = false;
+
+//     for (let indexEnding = 0; indexEnding < ending.length; indexEnding += 1) {
+//         if (word[indexEnding] === ending[indexEnding]) {
+//             equal = true;
+//         } else {
+//             equal = false;
+//         }
+//     }
+//     return equal
+// }
+
+// console.log(verifyEndingWord(reversedWord, reversedEnding));         // Requisito 7
