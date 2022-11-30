@@ -37,7 +37,7 @@ let info2 = {
 
 
 
-// EXERCÍCIO 2
+// EXERCÍCIO 2 - LEITURA DE OBJETOS
 
 let leitor = {
     nome: 'Julia',
@@ -52,4 +52,14 @@ let leitor = {
     ],
   };
 
-console.log('O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' se chama \'' + leitor.livrosFavoritos[0]['titulo'] + '\'');
+// console.log('O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' se chama \'' + leitor.livrosFavoritos[0]['titulo'] + '\''); // Requisito 1
+
+leitor.livrosFavoritos.push(
+  {
+    titulo: 'Harry Potter e o Prisioneiro de Azkaban',
+    autor: 'JK Rowling',
+    editor: 'Rocco',
+  },
+); // Requisito 2
+
+console.log(leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros favoritos'); // Requisito 3
