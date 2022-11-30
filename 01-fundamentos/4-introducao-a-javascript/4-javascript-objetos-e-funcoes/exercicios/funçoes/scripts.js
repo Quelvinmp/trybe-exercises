@@ -79,28 +79,46 @@
 // console.log(verifyBiggerSize(testingNames));            // Requisito 4
 
 
-let arrNumbers = [2, 3, 2, 5, 8, 2, 3];
+// let arrNumbers = [2, 3, 2, 5, 8, 2, 3];
 
-function numberRepetitionVerify(numbers) {
+// function numberRepetitionVerify(numbers) {
 
-    let repetitionsNumber = 0;
-    let mostRepeatedValue = numbers[0];
+//     let repetitionsNumber = 0;
+//     let mostRepeatedValue = numbers[0];
 
-    for (let index in numbers) {
-        let repetition = 0;
-        for (let value of numbers) {
-            if (numbers[index] === value) {
-                repetition += 1;
-            }
-        }
-        if (repetition > repetitionsNumber) {
-            repetitionsNumber = repetition;
-            mostRepeatedValue = numbers[index];
-        }
+//     for (let index in numbers) {
+//         let repetition = 0;
+//         for (let value of numbers) {
+//             if (numbers[index] === value) {
+//                 repetition += 1;
+//             }
+//         }
+//         if (repetition > repetitionsNumber) {
+//             repetitionsNumber = repetition;
+//             mostRepeatedValue = numbers[index];
+//         }
 
-    }
+//     }
 
-    return mostRepeatedValue
-}
+//     return mostRepeatedValue
+// }
 
-console.log(numberRepetitionVerify(arrNumbers));            // Requisito 5
+// console.log(numberRepetitionVerify(arrNumbers));            // Requisito 5
+
+
+// let testingNumber = 5;
+
+// function sum1toN(N) {
+
+//     let sum = 0;
+//     let elements = [];
+
+//     for (let index = 1; index <= N; index += 1) {
+//         sum += index;
+//         elements.push(index);
+//     }
+
+//     return elements.join('+') + ' = ' + sum
+// }
+
+// console.log(sum1toN(testingNumber));            // Requisito 6
