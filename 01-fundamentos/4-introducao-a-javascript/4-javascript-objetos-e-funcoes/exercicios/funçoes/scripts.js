@@ -28,7 +28,7 @@
 
 // function verifyHigher (numbers) {
 
-// let higher = 0;
+// let higher = numbers[0];
 
 // for (let index in numbers) {
 //     if (numbers[index] > higher) {
@@ -40,3 +40,23 @@
 // }
 
 // console.log(verifyHigher(testingNumbers));           // Requisito 2
+
+
+// let testingNumbers = [2, 4, 6, 7, 10, 0, -3];
+
+// function verifyHigher (numbers) {
+
+//     let smaller = numbers[0];
+    
+//     for (let index in numbers) {
+//         if (numbers[index] < smaller) {
+//             smaller = index;
+//         }
+//     }
+    
+//         return smaller
+//     }
+    
+//     console.log(verifyHigher(testingNumbers));           // Requisito 3
+
+
