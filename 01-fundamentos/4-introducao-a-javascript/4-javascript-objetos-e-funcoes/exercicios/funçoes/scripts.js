@@ -47,16 +47,16 @@
 // function verifyHigher (numbers) {
 
 //     let smaller = numbers[0];
-    
+
 //     for (let index in numbers) {
 //         if (numbers[index] < smaller) {
 //             smaller = index;
 //         }
 //     }
-    
+
 //         return smaller
 //     }
-    
+
 //     console.log(verifyHigher(testingNumbers));           // Requisito 3
 
 
@@ -77,3 +77,30 @@
 // }
 
 // console.log(verifyBiggerSize(testingNames));            // Requisito 4
+
+
+let arrNumbers = [2, 3, 2, 5, 8, 2, 3];
+
+function numberRepetitionVerify(numbers) {
+
+    let repetitionsNumber = 0;
+    let mostRepeatedValue = numbers[0];
+
+    for (let index in numbers) {
+        let repetition = 0;
+        for (let value of numbers) {
+            if (numbers[index] === value) {
+                repetition += 1;
+            }
+        }
+        if (repetition > repetitionsNumber) {
+            repetitionsNumber = repetition;
+            mostRepeatedValue = numbers[index];
+        }
+
+    }
+
+    return mostRepeatedValue
+}
+
+console.log(numberRepetitionVerify(arrNumbers));            // Requisito 5
