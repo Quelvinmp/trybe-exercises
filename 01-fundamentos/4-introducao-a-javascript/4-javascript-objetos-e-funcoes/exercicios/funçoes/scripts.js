@@ -60,3 +60,20 @@
 //     console.log(verifyHigher(testingNumbers));           // Requisito 3
 
 
+// let testingNames = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+
+// function verifyBiggerSize (names) {
+
+// let nameCharacters = names[0].length;
+// let biggestName;
+
+// for (let index in names) {
+//     if (names[index].length > nameCharacters) {
+//         nameCharacters = names[index].length;
+//         biggestName = names[index];
+//     }
+// }
+//     return biggestName;
+// }
+
+// console.log(verifyBiggerSize(testingNames));            // Requisito 4
