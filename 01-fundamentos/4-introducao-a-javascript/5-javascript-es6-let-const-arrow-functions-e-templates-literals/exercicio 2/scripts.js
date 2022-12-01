@@ -23,6 +23,6 @@
 // //     }
 // // }
 
-// const longestWord = text => text.split(' ').sort((wordA, wordB) => wordB.length - wordA.length)[0];
+// const longestWord = text => text.split(' ').sort((wordA, wordB) => wordB.length - wordA.length); // Peguei do gabarito.
 // console.log(longestWord("Antonio foi ao banheiro e não sabemos o que aconteceu"));           // Requisito 3
 
