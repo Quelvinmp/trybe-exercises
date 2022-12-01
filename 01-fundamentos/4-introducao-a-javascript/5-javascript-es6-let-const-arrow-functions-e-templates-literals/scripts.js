@@ -6,17 +6,16 @@
 //   imprimeIdade()         // Requisito 1
 
 
-//   // Executando esse código iremos receber um erro `TypeError: Assignment to constant variable.`
-//   let pessoa = {
+// Executando esse código iremos receber um erro `TypeError: Assignment to constant variable.`
+// const pessoa = {
 //     nome: 'Henri',
 //     idade: 20
-//   }
-//   pessoa = {
-//     nome: 'Luna',
-//     idade: 19
-//   } // Altere essa estrutura para corrigir o erro.
-//   console.log('Nome:', pessoa.nome);
-//   console.log('Idade:', pessoa.idade);          // Requisito 2
+// }
+
+// pessoa.nome = 'Luana';
+// pessoa.idade = 19;
+// console.log('Nome:', pessoa.nome);
+// console.log('Idade:', pessoa.idade);          // Requisito 2
 
 
 // let favoriteFood = 'Lasanha';
@@ -52,7 +51,7 @@
 // //   console.log(hello(nome));
 
 // let nome = 'Quelvin';
-// let saudacaoNome = (nome) => `Olá, ${nome}!`;
+// const saudacaoNome = (nome) => `Olá, ${nome}!`;
 // console.log(saudacaoNome(nome));            // Requisito 6
 
 
@@ -65,7 +64,7 @@
 
 // let nome = 'Quelvin';
 // let sobrenome = 'Machado';
-// let completeName = (firstName, lastName) => `${firstName} ${lastName}`;
+// const completeName = (firstName, lastName) => `${firstName} ${lastName}`;
 // console.log(completeName(nome, sobrenome));         // Requisito 7
 
 
@@ -80,5 +79,5 @@
 // console.log(speedCar(speed));
 
 // let speed = 121;
-// const speedCar = (speed) => (speed >= 120) ? `Você ultrapassou o limite de velocidade` : `Você está na velocidade permitida`;           // Requisito 8
+// const speedCar = (speed) => (speed >= 120 ? `Você ultrapassou o limite de velocidade` : `Você está na velocidade permitida`);           // Requisito 8
 // console.log(speedCar(speed));
