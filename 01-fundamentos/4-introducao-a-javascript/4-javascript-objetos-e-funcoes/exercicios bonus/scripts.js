@@ -12,12 +12,12 @@
 //     M: 1000,
 // }
 
-// function traductionNumber(roman) {
+// function convertRomanToNatural(roman) {
 
 //     let romanArray = roman.split('');
-//     let translate = [];
+//     let naturalArray = [];
 //     let finalAlgarism = 0;
-//     let sumTranslate = 0;
+//     let naturalNumber = 0;
 
 //     for (let index in romanArray) {
 //         for (let key in equivalenceTable) {
@@ -45,21 +45,21 @@
 
 // EXERCÍCIO BÔNUS 2
 
-let vector = [[1, 2], [3, 4, 5, 6], [7, 8, 9, 10]];
+// let vector = [[1, 2], [3, 4, 5, 6], [7, 8, 9, 10]];
 
-function arrayOfNumbers(vector) {
+// function arrayOfNumbers(vector) {
 
-    let evenNumber = [];
+//     const evenNumber = [];
 
-    for (let indexPrimary in vector) {
-        for (let indexSecundary in vector[indexPrimary]) {
-            if (vector[indexPrimary][indexSecundary] %2 === 0) {
-                evenNumber.push(vector[indexPrimary][indexSecundary]);
-            }
-        }
-    }
+//     for (let indexPrimary in vector) {
+//         for (let indexSecundary in vector[indexPrimary]) {
+//             if (vector[indexPrimary][indexSecundary] %2 === 0) {
+//                 evenNumber.push(vector[indexPrimary][indexSecundary]);
+//             }
+//         }
+//     }
 
-    return evenNumber
-}
+//     return evenNumber
+// }
 
-console.log(arrayOfNumbers(vector));
+// console.log(arrayOfNumbers(vector));                    // EXERCÍCIO BÔNUS 2                     
