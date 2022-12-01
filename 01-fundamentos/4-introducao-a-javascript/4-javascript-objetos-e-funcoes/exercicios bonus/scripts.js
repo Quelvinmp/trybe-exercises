@@ -100,7 +100,7 @@ const separeteSingleWords = wordsArray => {
     return uniqueWords
 }
 
-const repetitionsInObject = (singleWords, wordsArray) => {
+const joinRepetitionsInObject = (singleWords, wordsArray) => {
 
     const singleWordsRepetitions = {};
     const numberOfRepetitions = [];
@@ -121,7 +121,7 @@ const repetitionsInObject = (singleWords, wordsArray) => {
     return singleWordsRepetitions
 }
 
-console.log(repetitionsInObject(separeteSingleWords(basket), basket));                  // EXERCÍCIO BÔNUS 3
+console.log(joinRepetitionsInObject(separeteSingleWords(basket), basket));                  // EXERCÍCIO BÔNUS 3
 
 
 // EXERCÍCIO BÔNUS 4
