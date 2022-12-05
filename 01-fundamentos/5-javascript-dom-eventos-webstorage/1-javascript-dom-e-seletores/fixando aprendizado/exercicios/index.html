@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+
+    <style>
+        main,
+        section {
+            border-color: black;
+            border-style: solid;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .main-content {
+            background-color: yellow;
+        }
+
+        .main-content .center-content {
+            background-color: red;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .main-content .center-content p {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Desafio - JavaEscripito</h1>
+    </header>
+    <main class="main-content">
+        <section class="center-content">
+            <p>Texto padrão do nosso site</p>
+            <p>-----</p>
+            <p>Trybe</p>
+        </section>
+    </main>
+
+    <script>
+        const changeParagraph = () => {
+            document.getElementsByTagName('p')[1].innerText = 'Daqui a dois eu me vejo formado na Trybe há 1 ano e empregado numa empresa na qual me identifico com seus valores também há 1 ano. Também me vejo recém-casado.'
+        }
+        changeParagraph()
+
+        const mainContent = () => {
+            const mainContent = document.getElementsByClassName('main-content');
+            return mainContent[0].style.backgroundColor = 'rgb(76,164,109)';
+        }
+        mainContent()
+
+        const centerContent = () => {
+            const centerContent = document.getElementsByClassName('center-content');
+            centerContent[0].style.backgroundColor = 'white';
+        }
+        centerContent()
+
+        const changeH1 = () => {
+            document.getElementsByTagName('h1')[0].innerText = 'Desafio - JavaScript';
+        }
+        changeH1()
+
+        const paragraph = () => {
+            let paragraph = document.getElementsByTagName('p')[0];
+            paragraph.innerHTML = paragraph.innerHTML.toUpperCase();
+        }
+        paragraph()
+        
+        const showTagsP = () => {
+            const tagsP = document.getElementsByTagName('p');
+
+            for (let value of tagsP) {
+                console.log(value.innerHTML);
+            }
+        }
+        showTagsP()
+
+
+    </script>
+</body>
+
+</html>
