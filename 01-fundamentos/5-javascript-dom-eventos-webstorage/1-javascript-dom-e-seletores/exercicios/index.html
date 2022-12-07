@@ -47,42 +47,43 @@
 
     <script>
         const changeParagraph = () => {
-            document.getElementsByTagName('p')[1].innerText = 'Daqui a dois eu me vejo formado na Trybe há 1 ano e empregado numa empresa na qual me identifico com seus valores também há 1 ano. Também me vejo recém-casado.'
+            const aboutFurureParagraph = document.getElementsByTagName('p')[1]
+            aboutFurureParagraph.innerText = 'awdw'
         }
         changeParagraph()
 
-        const mainContent = () => {
-            const mainContent = document.getElementsByClassName('main-content');
-            return mainContent[0].style.backgroundColor = 'rgb(76,164,109)';
+        const changeSquareMainColor = () => {
+            const squareColorMain = document.getElementsByClassName('main-content')[0];
+            squareColorMain.style.backgroundColor = 'rgb(76,164,109)';
         }
-        mainContent()
+        changeSquareMainColor()
 
-        const centerContent = () => {
-            const centerContent = document.getElementsByClassName('center-content');
-            centerContent[0].style.backgroundColor = 'white';
+        const changeSquareCenterColor = () => {
+            const squareColorCenter = document.getElementsByClassName('center-content')[0];
+            squareColorCenter.style.backgroundColor = 'white';
         }
-        centerContent()
+        changeSquareCenterColor()
 
-        const changeH1 = () => {
-            document.getElementsByTagName('h1')[0].innerText = 'Desafio - JavaScript';
+        const fixTitle = () => {
+            const fixed = document.getElementsByTagName('h1')[0];
+            fixed.innerText = 'Desafio - JavaScript';
         }
-        changeH1()
+        fixTitle()
 
-        const paragraph = () => {
-            let paragraph = document.getElementsByTagName('p')[0];
-            paragraph.innerHTML = paragraph.innerHTML.toUpperCase();
+        const changeToUpperCase = () => {
+            const upperCaseParagraph = document.getElementsByTagName('p')[0];
+            upperCaseParagraph.innerHTML = upperCaseParagraph.innerHTML.toUpperCase();
         }
-        paragraph()
-        
-        const showTagsP = () => {
-            const tagsP = document.getElementsByTagName('p');
+        changeToUpperCase()
 
-            for (let value of tagsP) {
+        const showParagraphs = () => {
+            const paragraphs = document.getElementsByTagName('p');
+
+            for (const value of paragraphs) {
                 console.log(value.innerHTML);
             }
         }
-        showTagsP()
-
+        showParagraphs()
 
     </script>
 </body>
