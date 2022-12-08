@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+
+    <style>
+        main,
+        section {
+            border-color: black;
+            border-style: solid;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .main-content {
+            background-color: yellow;
+        }
+
+        .main-content .center-content {
+            background-color: red;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .main-content .center-content p {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Desafio - JavaEscripito</h1>
+    </header>
+    <main class="main-content">
+        <section class="center-content">
+            <p>Texto padrão do nosso site</p>
+            <p>-----</p>
+            <p>Trybe</p>
+        </section>
+    </main>
+
+    <script>
+        const changeParagraph = () => {
+            const aboutFurureParagraph = document.getElementsByTagName('p')[1]
+            aboutFurureParagraph.innerText = 'awdw'
+        }
+        changeParagraph()
+
+        const changeSquareMainColor = () => {
+            const squareColorMain = document.getElementsByClassName('main-content')[0];
+            squareColorMain.style.backgroundColor = 'rgb(76,164,109)';
+        }
+        changeSquareMainColor()
+
+        const changeSquareCenterColor = () => {
+            const squareColorCenter = document.getElementsByClassName('center-content')[0];
+            squareColorCenter.style.backgroundColor = 'white';
+        }
+        changeSquareCenterColor()
+
+        const fixTitle = () => {
+            const fixed = document.getElementsByTagName('h1')[0];
+            fixed.innerText = 'Desafio - JavaScript';
+        }
+        fixTitle()
+
+        const changeToUpperCase = () => {
+            const upperCaseParagraph = document.getElementsByTagName('p')[0];
+            upperCaseParagraph.innerHTML = upperCaseParagraph.innerHTML.toUpperCase();
+        }
+        changeToUpperCase()
+
+        const showParagraphs = () => {
+            const paragraphs = document.getElementsByTagName('p');
+
+            for (const value of paragraphs) {
+                console.log(value.innerHTML);
+            }
+        }
+        showParagraphs()
+
+    </script>
+</body>
+
+</html>
