@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+        section {
+            border-color: black;
+            border-style: solid;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .main-content {
+            background-color: yellow;
+        }
+
+        .main-content .center-content {
+            background-color: red;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .main-content .center-content p {
+            font-style: italic;
+        }
+
+        .main-content .left-content {
+            background-color: green;
+            width: 60%;
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .main-content .left-content .small-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 100%;
+        }
+
+        .main-content .right-content {
+            background-color: blue;
+            width: 60%;
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .main-content .description {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        const body = document.getElementsByTagName('body')[0];
+
+        const title = document.createElement('h1');
+        title.innerHTML = 'TrybeTrip - Agência de Viagens';
+        title.className = 'title'
+        body.appendChild(title);
+
+        const main = document.createElement('main');
+        main.className = 'main-content';
+        body.appendChild(main);
+        main.style.backgroundColor = 'green'
+
+        const firstSection = document.createElement('section');
+        firstSection.className = 'center-content';
+        main.appendChild(firstSection);
+
+        const firstParagraph = document.createElement('p');
+        firstParagraph.innerHTML = 'Pacote: Lua de Mel em Gramado 2024';
+        main.appendChild(firstParagraph);
+
+        const secondSection = document.createElement('section');
+        secondSection.className = 'left-content';
+        main.appendChild(secondSection);
+        main.removeChild(secondSection);
+
+        const thirdSection = document.createElement('section');
+        thirdSection.className = 'right-content';
+        main.appendChild(thirdSection);
+
+        const img = document.createElement('img');
+        img.src = 'https://picsum.photos/200';
+        img.className = 'small-image';
+        secondSection.appendChild(img);
+
+        const uList = document.createElement('ul');
+        thirdSection.appendChild(uList);
+        thirdSection.style.marginRight = 'auto';
+
+        const arrayNumbers = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+        for (const value of arrayNumbers) {
+            const createLi = document.createElement('li');
+            createLi.innerHTML = value;
+            uList.appendChild(createLi);
+        }
+
+        const ul = document.getElementsByTagName('ul')[0];
+        ul.lastChild.remove();
+        ul.lastChild.remove();
+
+        for (const index = 0; index <= 3; index += 1) {
+            const createH3 = document.createElement('h3');
+            createH3.className = 'description'
+            main.appendChild(createH3)
+        }
+    </script>
+</body>
+
+</html>
