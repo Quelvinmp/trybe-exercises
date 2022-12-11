@@ -33,7 +33,7 @@ const createDaysOfTheMonth = () => {
 }
 createDaysOfTheMonth()
 
-const createButtonFeriados = (Feriados) => {
+const createButtonHolidays = () => {
     const buttonFeriado = document.createElement('button');
     buttonFeriado.innerHTML = 'Feriados';
     buttonFeriado.id = 'btn-holiday';
@@ -41,22 +41,31 @@ const createButtonFeriados = (Feriados) => {
     const buttonsContainer = document.querySelector('.buttons-container');
     buttonsContainer.appendChild(buttonFeriado);
 }
-createButtonFeriados();
+createButtonHolidays();
 
 const changeBgColorHolidays = () => {
     const holidays = document.getElementsByClassName('holiday');
     const buttonFeriados = document.getElementById('btn-holiday');
-    const backgroundColor = 'unset';
+    const defaultColor = 'unset';
     const newColor = 'rgb(3,209,0)';
 
     buttonFeriados.addEventListener('click', () => {
         for (const day of holidays) {
-            if (day.style.backgroundColor === backgroundColor) {
+            if (day.style.backgroundColor === defaultColor) {
                 day.style.backgroundColor = newColor;
             } else {
-                day.style.backgroundColor = backgroundColor;
+                day.style.backgroundColor = defaultColor;
             }
         }
     });
 }
 changeBgColorHolidays()
+
+const createButtonFriday = () => {
+    const buttonFridays = document.createElement('button');
+    buttonFridays.innerHTML = 'Sexta-feira';
+    buttonFridays.id = 'btn-friday';
+    const buttonsContainer = document.querySelector('.buttons-container');
+    buttonsContainer.appendChild(buttonFridays);
+}
+createButtonFriday()
