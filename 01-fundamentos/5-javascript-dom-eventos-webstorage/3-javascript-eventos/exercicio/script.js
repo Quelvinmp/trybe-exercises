@@ -116,3 +116,12 @@ const addTask = (task) => {
     divMyTasks.appendChild(createTask);
 }
 addTask('Dias de Projeto Trybe')
+
+const addColorToTask = (color) => {
+    const createDiv = document.createElement('div');
+    createDiv.className = 'task';
+    createDiv.style.backgroundColor = color;
+    const divMyTasks = document.querySelector('.my-tasks');
+    divMyTasks.appendChild(createDiv);
+}
+addColorToTask('green')
