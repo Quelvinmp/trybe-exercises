@@ -108,3 +108,11 @@ const dayMouseOut = () => {
 
 dayMouseOver()
 dayMouseOut()
+
+const addTask = (task) => {
+    const createTask = document.createElement('span');
+    createTask.innerHTML = task;
+    const divMyTasks = document.querySelector('.my-tasks');
+    divMyTasks.appendChild(createTask);
+}
+addTask('Dias de Projeto Trybe')
