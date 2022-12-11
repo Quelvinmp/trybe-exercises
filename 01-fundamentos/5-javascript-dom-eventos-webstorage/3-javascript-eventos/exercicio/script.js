@@ -41,4 +41,22 @@ const createButtonFeriados = (Feriados) => {
     const buttonsContainer = document.querySelector('.buttons-container');
     buttonsContainer.appendChild(buttonFeriado);
 }
-createButtonFeriados()
+createButtonFeriados();
+
+const changeBgColorHolidays = () => {
+    const holidays = document.getElementsByClassName('holiday');
+    const buttonFeriados = document.getElementById('btn-holiday');
+    const backgroundColor = 'unset';
+    const newColor = 'rgb(3,209,0)';
+
+    buttonFeriados.addEventListener('click', () => {
+        for (const day of holidays) {
+            if (day.style.backgroundColor === backgroundColor) {
+                day.style.backgroundColor = newColor;
+            } else {
+                day.style.backgroundColor = backgroundColor;
+            }
+        }
+    });
+}
+changeBgColorHolidays()
