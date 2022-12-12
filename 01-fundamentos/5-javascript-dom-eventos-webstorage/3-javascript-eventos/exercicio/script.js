@@ -148,11 +148,38 @@ const setDayColor = () => {
     days.addEventListener('click', (event) => {
         let eventTargetColor = event.target.style.color;
         if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
-            let color = selectedTask[0].style.backgroundColor; // Pega a cor de fundo do primeiro elemento salvo na variável "selectedTask" e salva na variável "color"
-            event.target.style.color = color; // atribui a cor salva na variável "color" ao evento alvo
+            let color = selectedTask[0].style.backgroundColor;
+            event.target.style.color = color;
         } else if (eventTargetColor === taskColor) {
-            event.target.style.color = 'rgb(119,119,119)';  // Altera a cor de fundo do evento alvo para "rgb(119, 119, 119)"
+            event.target.style.color = 'rgb(119,119,119)';
         }
     });
 }
 setDayColor();
+
+const addText = () => {
+    const taskInput = document.getElementById('task-input');
+    const btnAdd = document.getElementById('btn-add');
+    const taskList = document.querySelector('.task-list');
+
+    btnAdd.addEventListener('click', () => {
+        if (taskInput.value === '') {
+            window.alert('Erro');
+        } else {
+            const taskItem = document.createElement('li');
+            taskItem.innerHTML = taskInput.value;
+            taskList.appendChild(taskItem);
+            taskInput.value = ''
+        }
+    });
+
+    taskInput.addEventListener('keyup', (event) => {
+        if (event.key === 'Enter' && taskInput.value !== '') {
+            const taskItem = document.createElement('li');
+            taskItem.innerHTML = taskInput.value;
+            taskList.appendChild(taskItem);
+            taskInput.value = ''
+        }
+    });
+}
+addText()
