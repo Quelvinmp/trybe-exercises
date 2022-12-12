@@ -125,3 +125,16 @@ const addColorToTask = (color) => {
     divMyTasks.appendChild(createDiv);
 }
 addColorToTask('green')
+
+const setTaskClass = () => {
+    let selectedTask = document.getElementsByClassName('task selected');
+    let myTasks = document.querySelector('.task');
+    myTasks.addEventListener('click', (event) => {
+        if (selectedTask.length === 0) {
+            event.target.className = 'task selected';
+        } else {
+            event.target.className = 'task';
+        }
+    });
+}
+setTaskClass();
