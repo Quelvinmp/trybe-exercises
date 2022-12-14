@@ -1,3 +1,6 @@
+const mainHtml = document.getElementById('main-content');
+const bodyHtml = document.body;
+
 const backgroundColor = document.getElementById('bg-container');
 const colorsBgc = ['White', 'Black', 'Green', 'Blue', 'Yellow'];
 
@@ -20,7 +23,9 @@ const createBtnBgc = (options) => {
         btnBgc.innerHTML = options[index];
         btnBgc.id = `bgc-${index}`;
         btnBgc.classList.add('paternBtn');
-        
+        btnBgc.addEventListener('click', () => {
+            bodyHtml.style.backgroundColor = options[index];
+        })
         backgroundColor.appendChild(btnBgc);
     }
 }
@@ -31,6 +36,9 @@ const createBtnFontC = (options) => {
         btnFontC.innerHTML = options[index];
         btnFontC.id = `fontc-${index}`;
         btnFontC.classList.add('paternBtn');
+        btnFontC.addEventListener('click', () => {
+            mainHtml.style.color = options[index];
+        })
         fontColor.appendChild(btnFontC);
     }
 }
@@ -41,6 +49,9 @@ const createBtnFontS = (options) => {
         btnFontS.innerHTML = options[index];
         btnFontS.id = `fonts-${index}`;
         btnFontS.classList.add('paternBtn');
+        btnFontS.addEventListener('click', () => {
+            mainHtml.style.fontSize = options[index];
+        })
         fontSize.appendChild(btnFontS);
     }
 }
@@ -51,6 +62,9 @@ const createBtnSpaceLines = (options) => {
         btnSpaceL.innerHTML = options[index];
         btnSpaceL.id = `spacel-${index}`;
         btnSpaceL.classList.add('paternBtn');
+        btnSpaceL.addEventListener('click', () => {
+            mainHtml.style.lineHeight = options[index];
+        })
         spaceBetweenLines.appendChild(btnSpaceL);
     }
 }
@@ -61,6 +75,9 @@ const createBtnFontTypes = (options) => {
         btnFontT.innerHTML = options[index];
         btnFontT.id = `fontt-${index}`;
         btnFontT.classList.add('paternBtn');
+        btnFontT.addEventListener('click', () => {
+            mainHtml.style.fontFamily = options[index];
+        })
         fontType.appendChild(btnFontT);
     }
 }
