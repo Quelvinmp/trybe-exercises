@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="" method="get">
+
+        <fieldset>
+
+            <label for="input-name">Nome Completo:
+                <input type="text" id="input-name" name="name" autofocus minlength="10" maxlength="40">
+            </label>
+
+            <br><br>
+
+            <label for="input-email">E-mail:
+                <input type="text" id="input-email" name="email" minlength="10" maxlength="50">
+            </label>
+
+            <br><br>
+
+            <p>Destino preferido:</p>
+            <input type="radio" name="options" id="option-1">
+            <label for="option-1">Cidade</label>
+
+            <input type="radio" name="options" id="option-2">
+            <label for="option-2">Campo</label>
+
+            <input type="radio" name="options" id="option-3">
+            <label for="option-3">Praia</label>
+
+            <input type="radio" name="options" id="option-4">
+            <label for="option-4">Montanhas</label>
+
+            <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+            <textarea name="why" id="why" cols="30" rows="10" maxlength="500"></textarea>
+
+            <p>Qual a melhor data para realizar sua viagem?</p>
+            <input type="date" name="date" id="input-date">
+
+            <br><br>
+
+            <label for="opportunities">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+                <input type="checkbox" name="checkbox" id="opportunities">
+            </label>
+
+            <br><br>
+
+            <label for="agree-image">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+                <input type="checkbox" name="checkbox" id="agree-image">
+            </label>
+            
+        </fieldset>
+
+        <br>
+
+        <button type="submit" id="submit">Enviar</button>
+        <button id="delete">Apagar</button>
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
