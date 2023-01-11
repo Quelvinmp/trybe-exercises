@@ -1,0 +1,43 @@
+header {
+    display: flex;
+    background-color: white;
+    /* height: 500px; */
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: blue; */
+    width: 60%;
+    height: 90%;
+}
+
+section {
+    /* background-color: yellow; */
+    /* border: 1px solid black; */
+    display: block;
+}
+
+.patternBtn {
+    display: block;
+    width: 100%;
+}
+
+main {
+    text-align: center;
+}
+
+h4 {
+    margin: 32px 0
+}
+
+#main-p {
+    margin: 64px 0
+}
+
+#reset-config {
+    margin: auto 0;
+}
