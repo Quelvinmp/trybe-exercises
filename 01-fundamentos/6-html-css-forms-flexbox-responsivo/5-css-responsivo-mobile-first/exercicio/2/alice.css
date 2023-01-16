@@ -26,12 +26,11 @@ header p{
 
 #navigation li{
     text-align: center;
-    border: 1px solid black;
-    padding: 5px;
 }
 
 #asides{
     display: flex;
+    gap: 30px;
 }
 
 .aside-one{
@@ -44,6 +43,26 @@ header p{
 
 p{
     text-align: justify;
-    margin: 10px 10px;
+    margin: 10px 15px;
 }
 
+@media screen and (min-width: 768px) {
+    *{
+        font-size: 1.05em;
+    }
+    header p {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    #navigation ul{
+        display: flex;
+        gap: 20px;
+        font-size: 20px;
+    }
+    #asides{
+        justify-content: space-around;
+    }
+    p{
+        margin: 15px 50px;
+    }
+}
