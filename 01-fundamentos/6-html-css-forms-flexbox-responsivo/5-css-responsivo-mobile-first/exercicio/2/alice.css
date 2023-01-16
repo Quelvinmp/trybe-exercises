@@ -1,0 +1,49 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+*{
+    margin: 5px 3px;
+    padding: 0;
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header p{
+    margin-top: 30px;
+   text-align: center;
+   width: 50%;
+}
+
+#navigation li{
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#asides{
+    display: flex;
+}
+
+.aside-one{
+    text-align: left;
+}
+
+.aside-two{
+    text-align: right;
+}
+
+p{
+    text-align: justify;
+    margin: 10px 10px;
+}
+
