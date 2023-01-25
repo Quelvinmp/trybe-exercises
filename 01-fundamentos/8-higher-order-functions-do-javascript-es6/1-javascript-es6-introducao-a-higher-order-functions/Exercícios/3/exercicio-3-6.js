@@ -1,4 +1,4 @@
-const data = require('./data-base')
+const books = require('./data-base')
 
 const expectedResult = false;
 
