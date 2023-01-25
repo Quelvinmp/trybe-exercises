@@ -11,6 +11,9 @@ const expectedResult = {
   releaseYear: 1991,
 };
 
-const getNamedBook = () => {
-  // escreva seu código aqui
+const getNamedBook = (books) => {
+  return books.find((book) => book.name.length === 26 && book.name)
 }
+
+// console.log(books[0].name.length);
+console.log(getNamedBook(books));
