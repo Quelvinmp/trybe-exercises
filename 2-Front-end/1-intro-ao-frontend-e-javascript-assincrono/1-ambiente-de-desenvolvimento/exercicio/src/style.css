@@ -20,9 +20,9 @@ form{
   align-items: center;
   background-color: #001d3d;
   height: fit-content;
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
-  border: 1px solid white;
+  border: 2px dashed white;
 }
 
 h1{
