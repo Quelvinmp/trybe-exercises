@@ -12,6 +12,7 @@ randomBtn.addEventListener('click', () => {
     .then((data) => Swal.fire({
       text: `${data.name}`,
       imageUrl: `${data.image.url}`,
+      imageHeight: '300px',
       imageAlt: `${data.image.name}`,
     }))
     .catch((error) => Swal.fire({

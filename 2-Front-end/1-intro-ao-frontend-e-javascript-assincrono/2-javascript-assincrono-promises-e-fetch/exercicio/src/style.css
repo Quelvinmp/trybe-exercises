@@ -24,6 +24,11 @@ main{
   border-radius: 10px;
 }
 
+h1{
+  text-align: center;
+  line-height: 1.2em;
+}
+
 button{
   border: none;
   background-color: #001d3d;
@@ -33,9 +38,17 @@ button{
   width: fit-content;
   align-self: center;
   cursor: pointer;
+  font-size: 1.1em;
 }
 
 button:hover{
   background-color: #000814;
 }
+
+@media (max-width: 500px) {
+  main{
+    width: 90%;
+  }
+}
+
 
