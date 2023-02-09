@@ -2,6 +2,8 @@
 import Swal from 'sweetalert2';
 import './style.css';
 
+const swalPosition = Swal.mixin({ backdrop: false });
+
 const randomBtn = document.getElementById('random');
 
 randomBtn.addEventListener('click', () => {
@@ -9,13 +11,13 @@ randomBtn.addEventListener('click', () => {
 
   fetch(`https://www.superheroapi.com/api.php/5619471344845487/${randomId}`)
     .then((response) => response.json())
-    .then((data) => Swal.fire({
+    .then((data) => swalPosition.fire({
       text: `${data.name}`,
       imageUrl: `${data.image.url}`,
       imageHeight: '300px',
       imageAlt: `${data.image.name}`,
     }))
-    .catch((error) => Swal.fire({
+    .catch((error) => swalPosition.fire({
       icon: 'error',
       title: 'Oops...',
       text: `${error.message}`,
