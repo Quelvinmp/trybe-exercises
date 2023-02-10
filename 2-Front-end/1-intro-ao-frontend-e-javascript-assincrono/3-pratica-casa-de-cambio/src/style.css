@@ -93,6 +93,7 @@ span{
 }
 
 #dinamic-list div{
+  display: flex;
   margin: auto;
   min-width: 150px;
   max-width: fit-content;
@@ -101,9 +102,9 @@ span{
   border-radius: 5px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 12px 20px 12px 10px;
-  /* padding: 12px 35px 12px 10px; */
+  justify-content: center;
+  padding: 10px;
+  gap: 5px;
 }
 
 #dinamic-list img{
@@ -121,10 +122,11 @@ span{
 }
 
 #dinamic-list p:nth-child(3){
+  text-align: end;
+  flex-grow: 1;
   width: 40px;
   height: 16px;
   color: #FFE713;
-  font-family: 'Fira Code';
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
