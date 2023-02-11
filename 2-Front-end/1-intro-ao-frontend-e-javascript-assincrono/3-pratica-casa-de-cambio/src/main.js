@@ -42,13 +42,27 @@ const createDivs = (infos) => {
 };
 
 const clearTable = () => {
+  hText.innerHTML = '';
   while (coinList.children.length > 0) {
     coinList.removeChild(coinList.firstChild);
   }
 };
 
-const coinVerify = (name) => Object.keys(name)
-  .some((coin) => coin === chooseCoin.value.toUpperCase());
+const coinVerify = (name1) => {
+  const validation1 = Object.keys(name1)
+    .some((coin) => coin === chooseCoin.value.toUpperCase());
+  if (inputConversion.value) {
+    const validation2 = Object.keys(name1)
+      .some((coin) => coin === inputConversion.value.toUpperCase());
+    if (validation1 && validation2) {
+      return true;
+    } return false;
+  }
+  if (validation1) {
+    return true;
+  }
+  return false;
+};
 
 const compareCurrencies = (object) => {
   clearTable();
@@ -64,13 +78,15 @@ searchBtn.addEventListener('click', () => {
       icon: 'error',
       title: 'Oops...',
       text: 'Você precisa passar uma moeda de conversão!',
+      background: 'rgb(47, 47, 47)',
+      color: 'white',
     });
     return;
   }
   readAPI()
     .then((data) => {
       const { rates } = data;
-      if (inputConversion.value) {
+      if (inputConversion.value && coinVerify(rates)) {
         compareCurrencies(rates);
         return;
       }
@@ -84,10 +100,12 @@ searchBtn.addEventListener('click', () => {
         throw new Error('Moeda Não existente!');
       }
     })
-    .catch((error) => Swal.fire({
+    .catch(() => Swal.fire({
       icon: 'error',
       title: 'Oops...',
-      text: error,
+      text: 'Moeda Não existente!',
+      background: 'rgb(47, 47, 47)',
+      color: 'white',
     }));
 });
 
