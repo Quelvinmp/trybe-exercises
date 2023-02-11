@@ -13,12 +13,16 @@ main{
   color: white;
   width: 70%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 h1{
   font-weight:900;
   font-size: 56px;
-  margin-top: 70px;
+  margin-top: 30px;
+  text-align: center;
 }
 
 span{
@@ -29,10 +33,14 @@ span{
   margin: 40px 0;
   display: flex;
   gap: 16px;
-  align-items: flex-end;
+  justify-content: center;
 }
 
-#choose-coin{
+.pConfigs{
+  font-size: 10px;
+}
+
+.inputs{
   border: none;
   width: 171px;
   height: 48px;
@@ -41,11 +49,7 @@ span{
   padding: 10px;
   color: white;
   font-size: 16px;
-}
-
-.digit-div p{
-  font-size: 10px;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 #search{
@@ -55,16 +59,28 @@ span{
   border: 1px solid #96EB95;
   border-radius: 10px;  
   cursor: pointer;
+  align-self: center;
 }
 
+#search:hover{
+  background-color: #a3ffa1;
+}
+
+
 #coin-table{
+  display: flex;
+  flex-direction: column;
+  height: 60%;
   background: rgba(255, 255, 255, 0.06);
   border-radius: 20px;
   width: 100%;
-  height: 60vh;
+  margin-bottom: 30px;
   padding: 20px 30px 40px;
-  display: flex;
-  flex-direction: column;
+}
+
+#coin-table h2{
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 #dinamic-text{
@@ -79,6 +95,8 @@ span{
   overflow-y: scroll;
   overflow-x: hidden;
   flex-grow: 0;
+  margin: 0;
+  padding: 0;
 }
 
 ::-webkit-scrollbar{
@@ -136,9 +154,15 @@ span{
   text-overflow: ellipsis;
 }
 
-
-@media (max-width: 675px) {
-  h1{
-    text-align: center;
+@media (min-width: 992px) {
+  .digit-div{
+    display: flex;
+  }
+  .md-div{
+    margin-left: 16px;
+  }
+  .pConfigs{
+    margin-left: 16px;
+    margin-bottom: 4px;
   }
 }
