@@ -9,8 +9,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/assets/index-8f58bf42.js"></script>
-  <link rel="stylesheet" href="/assets/index-a330ef5e.css">
+  <script src="https://kit.fontawesome.com/5528a750e5.js" crossorigin="anonymous"></script>
+  <script type="module" crossorigin src="/assets/index-4f0c9a55.js"></script>
+  <link rel="stylesheet" href="/assets/index-6fb53d57.css">
 </head>
 
 <body>
@@ -20,10 +21,33 @@
     <h1>Casa de <span>Câmbio</span></h1>
     <section class="config-sec">
       <div class="digit-div">
-        <p>Digite a moeda:</p>
-        <input type="text" id="choose-coin" placeholder="USD">
+
+        <div class="md-div">
+          <p class="pConfigs">Valor</p>
+          <input type="number" class="inputs" id="value" placeholder="1,00" value="1" min="1">
+        </div>
+
+        <div class="md-div">
+          <p class="pConfigs">Converter de</p>
+          <input type="text" class="inputs" id="choose-coin" placeholder="BRL" value="BRL">
+        </div>
+
+        <div id="div-swap1">
+          <i id="swap" class="fa-solid fa-rotate swapBtn"></i>
+        </div>
+
+        <div class="md-div">
+          <p id="pConversion" class="pConfigs">para</p>
+          <input type="text" class="inputs" id="conversion" placeholder="USD" value="USD">
+        </div>
+
       </div>
-      <button type="button" id="search">Pesquisar</button>
+      <div class="buttons">
+        <button type="button" id="search">Pesquisar</button>
+        <div id="div-swap2">
+          <i id="swap" class="fa-solid fa-rotate swapBtn"></i>
+        </div>
+      </div>
     </section>
 
     <section id="coin-table">
