@@ -73,10 +73,20 @@ span{
   background-color: #a3ffa1;
 }
 
-.fa-solid{
-  font-size: 30px;
+#div-swap1{
+  display: flex;
+  justify-content: center;
+}
+
+#div-swap1 i{
+  font-size: 20px;
   cursor: pointer;
-} 
+
+}
+
+#div-swap2{
+display: none;
+}
 
 #coin-table{
   display: flex;
@@ -182,5 +192,20 @@ span{
     flex-direction: row;
     gap: 30px;
     align-items: center;
+  }
+  #div-swap2{
+    display: flex;
+    justify-content: center;
+  }
+  #div-swap2 i{
+    font-size: 20px;
+    cursor: pointer;
+  
+  }
+  #div-swap2{
+  display: block;
+  }
+  #div-swap1{
+    display: none;
   }
 }

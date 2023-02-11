@@ -8,13 +8,15 @@ const hText = document.getElementById('dinamic-text');
 const coinList = document.getElementById('dinamic-list');
 const inputConversion = document.getElementById('conversion');
 const inputValue = document.getElementById('value');
-const swap = document.getElementById('swap');
+const swapBtns = document.getElementsByClassName('swapBtn');
 
-swap.addEventListener('click', () => {
-  const actuallyValueConversion = inputConversion.value;
-  const actuallyValueChosenCoin = chooseCoin.value;
-  chooseCoin.value = actuallyValueConversion;
-  inputConversion.value = actuallyValueChosenCoin;
+Array.from(swapBtns).forEach((swapBtn) => {
+  swapBtn.addEventListener('click', () => {
+    const actuallyValueConversion = inputConversion.value;
+    const actuallyValueChosenCoin = chooseCoin.value;
+    chooseCoin.value = actuallyValueConversion;
+    inputConversion.value = actuallyValueChosenCoin;
+  });
 });
 
 const readAPI = () => fetch(`https://api.exchangerate.host/latest?base=${chooseCoin.value}`)
@@ -29,9 +31,9 @@ const createDivs = (infos) => {
   const coinValue = document.createElement('p');
   coinP.innerHTML = coin;
   if ((chooseCoin.value.toUpperCase() === 'BTC' || inputConversion.value.toUpperCase() === 'BTC' || coin === 'BTC') && value < 1) {
-    coinValue.innerHTML = value.toFixed(8);
+    coinValue.innerHTML = (value * inputValue.value).toFixed(8);
   } else {
-    coinValue.innerHTML = value.toFixed(3);
+    coinValue.innerHTML = (value * inputValue.value).toFixed(3);
   }
   coinDiv.appendChild(coinLogo);
   coinDiv.appendChild(coinP);
@@ -53,7 +55,6 @@ const compareCurrencies = (object) => {
   const conversion = Object.entries(object)
     .find((rate) => rate[0] === inputConversion.value.toUpperCase());
   hText.innerHTML = `Valores referentes a ${inputValue.value} ${chooseCoin.value.toUpperCase()} (1 und = ${conversion[1]} ${conversion[0]})`;
-  conversion[1] *= inputValue.value;
   createDivs(conversion);
 };
 
