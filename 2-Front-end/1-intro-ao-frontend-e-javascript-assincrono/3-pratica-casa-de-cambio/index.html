@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5528a750e5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -21,21 +22,24 @@
 
         <div class="md-div">
           <p class="pConfigs">Valor</p>
-          <input type="number" class="inputs" id="value" placeholder="1,00" value="1.00">
+          <input type="number" class="inputs" id="value" placeholder="1,00" value="1" min="1">
         </div>
 
         <div class="md-div">
           <p class="pConfigs">Converter de</p>
-          <input type="text" class="inputs" id="choose-coin" placeholder="BRL">
+          <input type="text" class="inputs" id="choose-coin" placeholder="BRL" value="BRL">
         </div>
 
         <div class="md-div">
           <p id="pConversion" class="pConfigs">para</p>
-          <input type="text" class="inputs" id="conversion" placeholder="USD">
+          <input type="text" class="inputs" id="conversion" placeholder="USD" value="USD">
         </div>
 
       </div>
-      <button type="button" id="search">Pesquisar</button>
+      <div class="buttons">
+        <button type="button" id="search">Pesquisar</button>
+        <i id="swap" class="fa-solid fa-rotate"></i>
+      </div>
     </section>
 
     <section id="coin-table">
