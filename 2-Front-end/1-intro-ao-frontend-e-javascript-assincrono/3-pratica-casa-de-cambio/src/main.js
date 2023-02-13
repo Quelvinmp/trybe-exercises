@@ -19,7 +19,7 @@ Array.from(swapBtns).forEach((swapBtn) => {
   });
 });
 
-const readAPI = () => fetch(`https://api.exchangerate.host/latest?base=${chooseCoin.value}`)
+const readAPIcoin = () => fetch(`https://api.exchangerate.host/latest?base=${chooseCoin.value}`)
   .then((response) => response.json());
 
 const createDivs = (infos) => {
@@ -83,7 +83,7 @@ searchBtn.addEventListener('click', () => {
     });
     return;
   }
-  readAPI()
+  readAPIcoin()
     .then((data) => {
       const { rates } = data;
       if (inputConversion.value && coinVerify(rates)) {
@@ -110,7 +110,7 @@ searchBtn.addEventListener('click', () => {
 });
 
 window.onload = () => {
-  readAPI()
+  readAPIcoin()
     .then((data) => {
       const { rates } = data;
       compareCurrencies(rates);
